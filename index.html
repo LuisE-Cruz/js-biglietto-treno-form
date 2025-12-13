@@ -8,21 +8,82 @@
     <title>TrainLean</title>
 </head>
 
-<body class="bg-danger-subtle">
-    <div class="container text-center mt-5">
-        <h1 class="text-danger">Let TrainLean calculate your train ticket</h1>
-        <div class="row bg-danger">
-            
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+<body class="bg-danger">
 
+    <div class="container text-center mt-5">
+
+        <h1 class="fw-bolder">Let TrainLean calculate your train ticket</h1>
+
+        <form class="row bg-danger-subtle my-3" action="#">
+
+
+
+
+            <div class="col-4 mt-3">
+
+                <label class="my-3 fw-bolder" for="user-name">Passenger</label>
+                <input type="text" name="name-surname" class="form-control" id="user-name"
+                    placeholder="Insert your name and surname" required>
+
+            </div>
+
+            <div class="col-4 mt-3">
+
+                <label class="my-3 fw-bolder" for="km">KM</label>
+                <input type="text" name="km-distance" class="form-control" id="km"
+                    placeholder="Insert your distance in kilometers" required>
+
+            </div>
+
+            <div class="col-4 mt-3">
+
+                <label class="my-3 fw-bolder" for="user-age">Age</label>
+                <select class="form-select" aria-label="default select example" id="user-age" required>
+                    <option value="" selected disabled>Choose your age range</option>
+                    <option value="underage">0-17</option>
+                    <option value="adult">18-65</option>
+                    <option value="senior">>65</option>
+                </select>
+
+            </div>
+
+            <div class="col-12 my-5">
+
+                <button id="btn-enter" class="btn btn-success">Enter</button>
+                <button id="btn-cancel" class="btn btn-danger ms-3">Cancel</button>
+
+            </div>
+
+        </form>
+
+        <div class="row" id="userticket">
+
+            <h2 class="fw-bolder">TrainLean found this option for you</h2>
+
+            <div class="col-12 my-3">
+
+                <table class="table table-bordered table-danger">
+                    <thead>
+                        <tr>
+                            <th scope="col">Passenger name</th>
+                            <th scope="col">Offer</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="name-o"></td>
+                            <td id="offer-o"></td>
+                            <td id="price-o"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
 
         </div>
+
     </div>
-
-
-
 
     <script src="js/script.js"></script>
 
