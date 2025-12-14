@@ -1,0 +1,22 @@
+// GENERARE BIGLIETTO TRENO
+
+// DATI NECCESSARI
+// Prezzo biglietto 0.21 * km 
+// Sconto del 20% ai <18
+// Sconto del 40% ai >65
+
+// SELEZIONE ELEMENTI 
+
+const nameSurname = document.getElementById("user-name");
+const km = document.getElementById("km");
+const userAge = document.getElementById("user-age");
+const form = document.querySelector('form');
+const btnCancel = document.getElementById("btn-cancel");
+const oName = document.getElementById("name-o");
+const oOffer = document.getElementById("offer-o");
+const oPrice = document.getElementById("price-o");
+
+//TABELLA DISPLAY
+
+const viewTicket = document.getElementById("user-ticket");
+viewTicket.classList.add("d-none");
