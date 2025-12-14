@@ -20,3 +20,13 @@ const oPrice = document.getElementById("price-o");
 
 const viewTicket = document.getElementById("user-ticket");
 viewTicket.classList.add("d-none");
+
+//INDICAZIONI FORM
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = nameSurname.value.trim();
+    const age = userAge.value;
+    let price = parseFloat(km.value) * 0.21;
+    
+})
