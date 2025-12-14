@@ -45,6 +45,8 @@ form.addEventListener("submit", (event) => {
     oName.innerText = name;
     oOffer.innerText = rate;
     oPrice.innerText = `${price.toFixed(2)} €`;
+
+    form.reset();
 })
 
 // SVUOTO IL FORM E IL TICKET 
