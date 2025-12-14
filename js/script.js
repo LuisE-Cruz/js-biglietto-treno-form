@@ -28,6 +28,18 @@ form.addEventListener("submit", (event) => {
     const name = nameSurname.value.trim();
     const age = userAge.value;
     let price = parseFloat(km.value) * 0.21;
+    let rate = "tariffa standard";
+
+    // CHECK DI KM
+    if (isNaN(km) || km <= 0){
+        
+    }
 
     viewTicket.classList.remove("d-none");
+})
+
+// SVUOTO IL FORM E IL TICKET 
+btnCancel.addEventListener("click", () => {
+    form.reset();
+    viewTicket.classList.add("d-none")
 })
