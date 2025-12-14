@@ -28,5 +28,6 @@ form.addEventListener("submit", (event) => {
     const name = nameSurname.value.trim();
     const age = userAge.value;
     let price = parseFloat(km.value) * 0.21;
-    
+
+    viewTicket.classList.remove("d-none");
 })
